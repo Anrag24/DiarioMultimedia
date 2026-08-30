@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTituloDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:layout_marginBottom="4dp"/>
+
+        <TextView
+            android:id="@+id/tvFechaDetalle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="12sp"
+            android:textColor="#666666"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Sección Foto -->
+        <LinearLayout
+            android:id="@+id/sectionFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Foto"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <ImageView
+                android:id="@+id/imgFotoDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="240dp"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+        <!-- Sección Audio -->
+        <LinearLayout
+            android:id="@+id/sectionAudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Audio"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <Button
+                android:id="@+id/btnReproducirAudio"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="▶ Reproducir audio"/>
+
+        </LinearLayout>
+
+        <!-- Sección Video -->
+        <LinearLayout
+            android:id="@+id/sectionVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Video"
+                android:textStyle="bold"
+                android:layout_marginBottom="4dp"/>
+
+            <VideoView
+                android:id="@+id/videoViewDetalle"
+                android:layout_width="match_parent"
+                android:layout_height="220dp"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

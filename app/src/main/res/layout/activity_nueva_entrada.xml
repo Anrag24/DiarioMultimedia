@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/etTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Título de la entrada"
+            android:inputType="text"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Sección Audio -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Audio"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+
+        <Button
+            android:id="@+id/btnGrabarAudio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎙 Grabar audio"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Sección Foto -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Foto"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+
+        <Button
+            android:id="@+id/btnTomarFoto"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="📷 Tomar foto"
+            android:layout_marginBottom="8dp"/>
+
+        <ImageView
+            android:id="@+id/imgPreviewFoto"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Sección Video -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Video"
+            android:textStyle="bold"
+            android:textSize="14sp"
+            android:layout_marginBottom="4dp"/>
+
+        <Button
+            android:id="@+id/btnGrabarVideo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="🎥 Grabar video"
+            android:layout_marginBottom="8dp"/>
+
+        <VideoView
+            android:id="@+id/videoPreview"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:visibility="gone"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Botones -->
+        <Button
+            android:id="@+id/btnGuardar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:layout_marginBottom="8dp"/>
+
+        <Button
+            android:id="@+id/btnCancelar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"/>
+
+    </LinearLayout>
+
+</ScrollView>
